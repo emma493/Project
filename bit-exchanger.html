@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bit-exchanger.css">
+
+</head>
+
+<body>
+    <div class="background" id="background"></div>
+
+    <div class="container">
+        <div class="logo">
+            <span class="bit">Bit</span> <span class="exchanger">Exchanger</span>
+        </div>
+        <h1>Exchange Calculator</h1>
+        <div class="input-group">
+            <input type="number" id="usdtInput" placeholder=" " required>
+            <label for="usdtInput">You give (USDT TRC20)</label>
+        </div>
+        <div class="input-group">
+            <input type="number" id="trxInput" placeholder=" " readonly>
+            <label for="trxInput">You get (TRX)</label>
+        </div>
+        <div class="input-group">
+            <input type="email" id="emailInput" placeholder=" " required>
+            <label for="emailInput">Your email</label>
+        </div>
+        <div class="input-group">
+            <input type="text" id="tronWallet" placeholder=" " required>
+            <label for="tronWallet">Tron wallet</label>
+        </div>
+        <div class="input-group">
+            <input type="text" id="promoCode" placeholder=" " required>
+            <label for="promoCode">Promocode</label>
+        </div>
+        <p class="note">Please copy the USDT amount and send this exact amount</p>
+        <!-- Copyable input field -->
+        <div class="copy-group">
+            <input type="text" id="copyInput" readonly>
+            <button id="copyButton">Copy</button>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="termsCheckbox" required>
+            <label for="termsCheckbox">I agree with the policy AML/KYC policy and exchange rules</label>
+        </div>
+        <button type="button" id="goToPayment">Go to payment</button>
+    </div>
+    <script src="bit-exchanger.js"></script>
+</body>
+
+</html>
